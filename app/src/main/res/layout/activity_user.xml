@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:paddingTop="30dp"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/search_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:alpha="0.5"
+            android:background="@drawable/layout_corners_2"
+            android:gravity="center"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@null"
+            android:queryHint="도서를 입력하세요"/>
+
+
+        <include
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            layout="@layout/fragment_booklist"/>
+
+        <include
+            android:id="@+id/include_loan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:visibility="invisible"
+            layout="@layout/fragment_loan"/>
+
+
+        <include
+            android:id="@+id/include_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:visibility="invisible"
+            layout="@layout/fragment_search"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:background="@drawable/layout_gradient"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_items">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

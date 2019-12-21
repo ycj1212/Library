@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_book"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="도서관리">
+    </item>
+    <item
+        android:id="@+id/action_user"
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="회원관리">
+    </item>
+    <item
+        android:id="@+id/action_logout2"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="로그아웃">
+    </item>
+</menu>

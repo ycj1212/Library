@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/booklist_title_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개 고양이 자연주의 육아백과 닥터 피케른의 홀리스틱 수의학 교본"
+        android:textSize="20dp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/booklist_author_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="리처드 H. 피케른 수전 허블 피케른 양현국+양창윤 옮김"/>
+
+    <TextView
+        android:id="@+id/booklist_publisher_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="책공장더불어"/>
+
+    <TextView
+        android:id="@+id/booklist_year_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2012"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loan_status_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="대출가능"
+            android:textColor="#0000ff"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="160dp"
+            android:layout_alignParentRight="true"
+            android:text="추가"/>
+
+        <Button
+            android:id="@+id/modify"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="80dp"
+            android:layout_alignParentRight="true"
+            android:text="수정"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="삭제"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
